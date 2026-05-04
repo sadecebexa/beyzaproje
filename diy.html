@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DIY Corner - Learn how to upcycle and customize your vintage thrifted finds.">
+    <title>DIY Corner | Thrift & Flourish</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tutorial-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+        .step-number {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            color: var(--color-sage);
+            opacity: 0.5;
+            line-height: 1;
+        }
+        @media (max-width: 768px) {
+            .tutorial-step {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header py-4">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold font-heading text-mocha">
+                Thrift & Flourish
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links flex gap-6 items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lookbook.html">The Lookbook</a></li>
+                    <li><a href="map.html">Thrifting Map</a></li>
+                    <li><a href="diy.html" class="active">DIY Corner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container text-center mb-16">
+            <h1 class="text-6xl text-sage mb-4">DIY Corner</h1>
+            <p class="text-lg text-dark-alt max-w-2xl mx-auto">
+                Breathe new life into old garments. Upcycling is not just sustainable; it's a form of personal expression.
+            </p>
+        </div>
+
+        <section class="container mb-16">
+            <div class="grid grid-cols-2 gap-8 items-center hero-flex">
+                <div>
+                    <h2 class="text-4xl text-mocha mb-4">Featured Tutorial:<br>The Lace Trim Upgrade</h2>
+                    <p class="text-dark-alt mb-6">Transform a simple slip dress or camisole by adding delicate vintage lace trim to the hem or neckline.</p>
+                    
+                    <div class="tutorial-step">
+                        <div class="step-number">01</div>
+                        <div>
+                            <h3 class="font-bold mb-1">Source Your Lace</h3>
+                            <p class="text-sm">Find vintage lace at charity shops or haberdasheries. Wash and iron it flat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tutorial-step">
+                        <div class="step-number">02</div>
+                        <div>
+                            <h3 class="font-bold mb-1">Pin & Baste</h3>
+                            <p class="text-sm">Pin the lace along the desired edge. Use a loose basting stitch by hand to secure it temporarily.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tutorial-step">
+                        <div class="step-number">03</div>
+                        <div>
+                            <h3 class="font-bold mb-1">Sew Securely</h3>
+                            <p class="text-sm">Using a sewing machine (or careful hand backstitch), sew along the edge. Remove basting stitches.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="polaroid rotate-right-1">
+                    <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/diy_upcycle_1777916064993.png" alt="Sewing lace trim">
+                    <div class="polaroid-caption">delicate details</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-cream py-16">
+            <div class="container">
+                <h2 class="text-4xl text-center text-blue mb-12">More Upcycling Ideas</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="floral-accent mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">Cropped Blazers</h3>
+                        <p class="text-sm text-dark-alt">Take an oversized men's blazer and crop it at the natural waist for a modern, boxy silhouette.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="floral-accent mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">Visible Mending</h3>
+                        <p class="text-sm text-dark-alt">Don't hide holes—highlight them with contrasting embroidery thread using the Sashiko method.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="floral-accent mb-4"></div>
+                        <h3 class="text-xl font-bold mb-2">Bleach Dyeing</h3>
+                        <p class="text-sm text-dark-alt">Revamp stained dark denim with reverse tie-dye techniques using household bleach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-cream py-8 mt-16 text-center">
+        <div class="container">
+            <h3 class="font-heading text-2xl mb-4 text-cream">Thrift & Flourish</h3>
+            <p class="text-sm opacity-70">© 2026 Thrift & Flourish. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

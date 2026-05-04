@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thrifting Map - A directory of the best vintage and second-hand shops.">
+    <title>Thrifting Map | Thrift & Flourish</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .map-card {
+            background: white;
+            padding: 2rem;
+            border: 1px solid rgba(166, 138, 109, 0.2);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        .map-card:hover {
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-sage);
+            transform: translateY(-5px);
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            background: var(--color-sage);
+            color: white;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header py-4">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold font-heading text-mocha">
+                Thrift & Flourish
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links flex gap-6 items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lookbook.html">The Lookbook</a></li>
+                    <li><a href="map.html" class="active">Thrifting Map</a></li>
+                    <li><a href="diy.html">DIY Corner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container text-center mb-16">
+            <h1 class="text-6xl text-blue mb-4">Thrifting Map</h1>
+            <p class="text-lg text-dark-alt max-w-2xl mx-auto">
+                Our curated directory of the best hidden gems, curated vintage boutiques, and charity shops.
+            </p>
+        </div>
+
+        <section class="container grid grid-cols-2 gap-8">
+            <article class="map-card">
+                <h3 class="text-2xl text-mocha mb-2">The Vintage Archive</h3>
+                <p class="text-sm text-dark-alt mb-4 italic">124 Bloom Street, M1 3HX</p>
+                <div class="mb-4">
+                    <span class="tag">Early 2000s</span>
+                    <span class="tag">Designer</span>
+                </div>
+                <p class="text-dark">Specializes in curated designer pieces from the late 90s and early 2000s. Perfect for finding that unique statement piece.</p>
+            </article>
+
+            <article class="map-card">
+                <h3 class="text-2xl text-mocha mb-2">Second Life Threads</h3>
+                <p class="text-sm text-dark-alt mb-4 italic">89 Northern Quarter, M4 1HQ</p>
+                <div class="mb-4">
+                    <span class="tag">Denim</span>
+                    <span class="tag">Casual</span>
+                    <span class="tag" style="background: var(--color-blue)">Affordable</span>
+                </div>
+                <p class="text-dark">A treasure trove of vintage denim and casual everyday wear. Very affordable by-the-kilo sales on weekends.</p>
+            </article>
+
+            <article class="map-card">
+                <h3 class="text-2xl text-mocha mb-2">Dusty Rose Boutique</h3>
+                <p class="text-sm text-dark-alt mb-4 italic">45 Floral Way, M2 4WQ</p>
+                <div class="mb-4">
+                    <span class="tag" style="background: var(--color-mocha)">Romantic</span>
+                    <span class="tag">Accessories</span>
+                </div>
+                <p class="text-dark">Focused on delicate romanticism, lace, and vintage accessories. A must-visit for dainty jewelry and handbags.</p>
+            </article>
+
+            <article class="map-card">
+                <h3 class="text-2xl text-mocha mb-2">Green Charity Shop</h3>
+                <p class="text-sm text-dark-alt mb-4 italic">High Street Central, M1 1AA</p>
+                <div class="mb-4">
+                    <span class="tag" style="background: var(--color-blue)">Charity</span>
+                    <span class="tag">Homeware</span>
+                </div>
+                <p class="text-dark">A standard charity shop with a surprisingly excellent curation of vintage homewares and hidden clothing gems if you're willing to dig.</p>
+            </article>
+        </section>
+        
+        <section class="container mt-16 text-center">
+             <div class="decorative-border inline-block bg-cream p-8">
+                 <h2 class="text-2xl text-sage mb-2">Know a hidden gem?</h2>
+                 <p class="mb-4 text-dark-alt">We're always looking to expand our directory.</p>
+                 <a href="contact.html" class="btn btn-primary">Submit a Store</a>
+             </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-cream py-8 mt-16 text-center">
+        <div class="container">
+            <h3 class="font-heading text-2xl mb-4 text-cream">Thrift & Flourish</h3>
+            <p class="text-sm opacity-70">© 2026 Thrift & Flourish. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

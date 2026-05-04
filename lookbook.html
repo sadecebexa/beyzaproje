@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Lookbook - Explore curated vintage aesthetic outfits from Thrift & Flourish.">
+    <title>The Lookbook | Thrift & Flourish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header py-4">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold font-heading text-mocha">
+                Thrift & Flourish
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links flex gap-6 items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lookbook.html" class="active">The Lookbook</a></li>
+                    <li><a href="map.html">Thrifting Map</a></li>
+                    <li><a href="diy.html">DIY Corner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container text-center mb-16">
+            <h1 class="text-6xl text-sage mb-4">The Lookbook</h1>
+            <p class="text-lg text-dark-alt max-w-2xl mx-auto">
+                A curated gallery of thrifted finds styled for the modern romantic. Click on any outfit to view the details in our custom gallery viewer.
+            </p>
+        </div>
+
+        <section class="container grid grid-cols-3 gap-8">
+            <!-- Gallery Items -->
+            <a href="#" class="lookbook-item polaroid rotate-left-1">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/lookbook_outfit_1777916051737.png" alt="Look 1: Vintage Blazer">
+                <div class="polaroid-caption">Autumn Walk</div>
+            </a>
+            
+            <a href="#" class="lookbook-item polaroid rotate-right-2 mt-8">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/hero_moodboard_1777916031204.png" alt="Look 2: Pastel Dream">
+                <div class="polaroid-caption">Pastel Dream</div>
+            </a>
+
+            <a href="#" class="lookbook-item polaroid rotate-left-2">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/diy_upcycle_1777916064993.png" alt="Look 3: Upcycled Dress">
+                <div class="polaroid-caption">Upcycled Romance</div>
+            </a>
+
+            <a href="#" class="lookbook-item polaroid rotate-right-1 mt-4">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/lookbook_outfit_1777916051737.png" alt="Look 4: 2000s Chic">
+                <div class="polaroid-caption">2004 Archive</div>
+            </a>
+            
+            <a href="#" class="lookbook-item polaroid rotate-left-1 mt-12">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/hero_moodboard_1777916031204.png" alt="Look 5: Coffee Run">
+                <div class="polaroid-caption">Coffee Run</div>
+            </a>
+
+            <a href="#" class="lookbook-item polaroid rotate-right-2 mt-4">
+                <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/diy_upcycle_1777916064993.png" alt="Look 6: Sunday Picnic">
+                <div class="polaroid-caption">Sunday Picnic</div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Modal for JS Gallery -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="polaroid" style="transform: none; margin: 0 auto; max-width: 500px;">
+                <img class="modal-img" src="" alt="Enlarged view">
+                <div class="polaroid-caption modal-caption"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-cream py-8 mt-16 text-center">
+        <div class="container">
+            <h3 class="font-heading text-2xl mb-4 text-cream">Thrift & Flourish</h3>
+            <p class="text-sm opacity-70">© 2026 Thrift & Flourish. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
