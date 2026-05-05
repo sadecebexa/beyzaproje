@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Thrift & Flourish. Get in touch for collaborations or questions.">
     <title>Contact | Thrift & Flourish</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
     <link rel="stylesheet" href="styles.css">
+
     <style>
         .contact-layout {
             display: flex;
             gap: 4rem;
             align-items: flex-start;
         }
+
         .contact-form-container {
             flex: 1;
             background: white;
@@ -19,6 +23,7 @@
             box-shadow: var(--shadow-polaroid);
             border-top: 5px solid var(--color-sage);
         }
+
         .moodboard-sidebar {
             flex: 0.8;
             display: grid;
@@ -26,10 +31,12 @@
             position: sticky;
             top: 100px;
         }
+
         @media (max-width: 768px) {
             .contact-layout {
                 flex-direction: column;
             }
+
             .moodboard-sidebar {
                 position: static;
                 width: 100%;
@@ -38,11 +45,12 @@
         }
     </style>
 </head>
+
 <body>
 
     <header class="site-header py-4">
         <div class="container flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold font-heading text-mocha">
+            <a href="index.html" class="text-2xl font-bold font-heading text-mocha italic">
                 Thrift & Flourish
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle navigation">
@@ -63,11 +71,12 @@
     </header>
 
     <main class="py-16 container">
-        
+
         <div class="text-center mb-12">
             <h1 class="text-6xl text-mocha mb-4">Let's Connect</h1>
             <p class="text-lg text-dark-alt max-w-2xl mx-auto">
-                Have a favorite thrift spot to share? Questions about an upcycling project? Or just want to talk vintage fashion? Reach out below.
+                Have a favorite thrift spot to share? Questions about an upcycling project? Or just want to talk vintage
+                fashion? Reach out below.
             </p>
         </div>
 
@@ -76,15 +85,16 @@
             <div class="contact-form-container">
                 <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                     <input type="hidden" name="access_key" value="e1937e25-b1d8-46a4-9b09-261a67286326">
-                    
+
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" id="name" name="name" class="form-control" required placeholder="Your name">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" required placeholder="you@example.com">
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="you@example.com">
                     </div>
 
                     <div class="form-group">
@@ -100,7 +110,8 @@
 
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-control" required placeholder="Write your message here..."></textarea>
+                        <textarea id="message" name="message" class="form-control" required
+                            placeholder="Write your message here..."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary w-full" style="width: 100%;">Submit</button>
@@ -110,10 +121,10 @@
             <!-- Mood Board Sidebar -->
             <aside class="moodboard-sidebar">
                 <div class="polaroid rotate-right-1">
-                    <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/hero_moodboard_1777916031204.png" alt="Inspiration 1">
+                    <img src="images\inspo1.jpeg" alt="Inspiration 1">
                 </div>
                 <div class="polaroid rotate-left-2" style="margin-top: -2rem; margin-left: 2rem;">
-                    <img src="C:/Users/beyza/.gemini/antigravity/brain/7f40f992-8940-4d8c-88df-25556c34fca8/diy_upcycle_1777916064993.png" alt="Inspiration 2">
+                    <img src="images\inspo2.jpeg" alt="Inspiration 2">
                 </div>
             </aside>
         </div>
@@ -129,4 +140,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
